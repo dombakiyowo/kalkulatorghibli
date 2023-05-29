@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sere Calculator</title>
+    <link rel="stylesheet" href="kalkulator.css" />
+  </head>
+  <body>
+    <h1>Let's Count Together!</h1>
+    <img src="icons8-totoro-100.png" alt="" />
+
+    <div class="calculator"> <!-- dalam kalkulator -->
+      <div class="display">
+        <input type="text" id="result" disabled />
+      </div>
+      <div class="buttons">
+        <button onclick="clearResult()" id="special">C</button>
+        <button onclick="backspace()" id="special">&larr;</button>
+        <button onclick="insertSymbol('/')" id="special">&divide;</button>
+        <button onclick="insertSymbol('*')" id="special">&times;</button>
+        <button onclick="insertSymbol('7')">7</button>
+        <button onclick="insertSymbol('8')">8</button>
+        <button onclick="insertSymbol('9')">9</button>
+        <button onclick="insertSymbol('-')" id="special">-</button>
+        <button onclick="insertSymbol('4')">4</button>
+        <button onclick="insertSymbol('5')">5</button>
+        <button onclick="insertSymbol('6')">6</button>
+        <button onclick="insertSymbol('+')" id="special">+</button>
+        <button onclick="insertSymbol('1')">1</button>
+        <button onclick="insertSymbol('2')">2</button>
+        <button onclick="insertSymbol('3')">3</button>
+        <button onclick="calculate()" id="special">=</button>
+        <button onclick="insertSymbol('0')">0</button>
+        <button onclick="insertSymbol('.')">.</button>
+      </div>
+    </div>
+    <script src="kalkulator.js"></script>
+  </body>
+</html>
